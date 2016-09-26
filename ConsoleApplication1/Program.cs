@@ -1,22 +1,19 @@
 ﻿using System;
- 
-namespace ConsoleApplication1
+using tabuleiro;
+
+namespace ConsoleApplication2
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            Console.Write("Digite um valor inteiro: ");
+            Posicao p;
+            p = new Posicao(1, 2);
 
-            int x = int.Parse(Console.ReadLine());
-
-            int y = 3 * x;
-
-            Console.WriteLine("TRIPLO = " + y);
+            Console.WriteLine("Posicao = " + p);
 
             Console.ReadLine();
-
         }
     }
 }
